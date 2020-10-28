@@ -18,10 +18,9 @@
                  }
             }
         }
-        $output = trim($output);
-        mb_internal_encoding('UTF-8');
-        return $firstChar = substr($output, 0, 1);
-        return $output = mb_strtoupper($firstChar) . mb_substr($output, 1);
+        return $output = trim($output);
+//         $firstChar = mb_substr($output, 0, 1);
+//         return $output = mb_strtoupper($firstChar) . mb_substr($output, 1);
     }
 
     //Преобразует строку числа типа '1234'
