@@ -12,9 +12,7 @@
             $input = $_POST['input'];
 
             if($input != ''){
-                //$output = numStr2phrase(preg_replace('|[^0-9]|', '', $input));
-                $output = preg_replace('|[^0-9]|', '', $input);
-                
+                $output = numStr2phrase(preg_replace('|[^0-9]|', '', $input));
             }
         }
 
