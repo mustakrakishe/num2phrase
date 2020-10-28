@@ -13,13 +13,9 @@
 
             if($input != ''){
                 //$output = numStr2phrase(preg_replace('|[^0-9]|', '', $input));
-                $output = myFunc(intval($input)) . '_lalala';
+                $output = preg_replace('|[^0-9]|', '', $input);
                 
             }
-        }
-    
-        function myFunc($x){
-            return $x*2;
         }
 
     ?>
