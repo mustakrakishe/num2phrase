@@ -43,7 +43,8 @@
             break;
 
         default:
-            $answer = numStr2phrase(preg_replace('|[^0-9]|', '', $text));
+//             $answer = numStr2phrase(preg_replace('|[^0-9]|', '', $text));
+            $answer = 'kukucuku';
     }
     
     bot(
