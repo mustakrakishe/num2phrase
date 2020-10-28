@@ -2,7 +2,7 @@
     //Преобразует строку числа типа '1234'
     //в строковую фразу типа 'Одна тысяча двести дридцать четыре'
     function numStr2phrase($input){
-        $output = 'Зашёл в numStr2phrase';
+        $output = '';
         $classes = num2classes($input);
         $classCount = count($classes);
 
@@ -10,11 +10,8 @@
             $output = 'ноль';
         }
         else{
-            
-            $output = 'Введён не 0';
              foreach($classes as $key => $class){
                  if($class != 0){
-                     $output = 'класс != 0';
 //                     $output .= ' ' . classNum2words($class);
 //                     $classId = $classCount - $key - 1;
 //                     $output .= getClassEnding($classId, $class);
@@ -46,76 +43,76 @@
         return $groups;
     }
 
-//     //преобразует строку класса числа типа '123'
-//     //в текстовое выражение типа ['сто', 'двадцать', 'три']
-//     function classNum2words($classNum){
-//         $classPhrase = [];
-//         $numWords = [
-//             [
-//                 'од',
-//                 'дв',
-//                 'три',
-//                 'четыре',
-//                 'пять',
-//                 'шесть',
-//                 'семь',
-//                 'восемь',
-//                 'девять'
-//             ],[
-//                 'двадцать',
-//                 'тридцать',
-//                 'сорок',
-//                 'пятьдесят',
-//                 'шестьдесят',
-//                 'семьдесят',
-//                 'восемьдесят',
-//                 'девяносто'
-//             ],[
-//                 'сто',
-//                 'двести',
-//                 'триста',
-//                 'четыреста',
-//                 'пятьсот',
-//                 'шестьсот',
-//                 'семьсот',
-//                 'восемьсот',
-//                 'девятьсот',
-//             ],[
-//                 'десять',
-//                 'одинадцать',
-//                 'двенадцать',
-//                 'тринадцать',
-//                 'четырнадцать',
-//                 'пятнадцать',
-//                 'шестнадцать',
-//                 'семнадцать',
-//                 'восемнадцать',
-//                 'девятнадцать'
-//             ]
-//         ];
+    //преобразует строку класса числа типа '123'
+    //в текстовое выражение типа ['сто', 'двадцать', 'три']
+    function classNum2words($classNum){
+        $classPhrase = [];
+        $numWords = [
+            [
+                'од',
+                'дв',
+                'три',
+                'четыре',
+                'пять',
+                'шесть',
+                'семь',
+                'восемь',
+                'девять'
+            ],[
+                'двадцать',
+                'тридцать',
+                'сорок',
+                'пятьдесят',
+                'шестьдесят',
+                'семьдесят',
+                'восемьдесят',
+                'девяносто'
+            ],[
+                'сто',
+                'двести',
+                'триста',
+                'четыреста',
+                'пятьсот',
+                'шестьсот',
+                'семьсот',
+                'восемьсот',
+                'девятьсот',
+            ],[
+                'десять',
+                'одинадцать',
+                'двенадцать',
+                'тринадцать',
+                'четырнадцать',
+                'пятнадцать',
+                'шестнадцать',
+                'семнадцать',
+                'восемнадцать',
+                'девятнадцать'
+            ]
+        ];
 
-//         if($classNum >= 100){
-//             $hundredsVal = intdiv($classNum, 100);
-//             array_push($classPhrase, $numWords[2][$hundredsVal-1]);
-//             $classNum = $classNum % 100;
-//         }
+        if($classNum >= 100){
+            $hundredsVal = intdiv($classNum, 100);
+            array_push($classPhrase, $numWords[2][$hundredsVal-1]);
+            $classNum = $classNum % 100;
+        }
 
-//         if($classNum >= 20){
-//             $tensVal = intdiv($classNum, 10);
-//             array_push($classPhrase, $numWords[1][$tensVal-2]);
-//             $classNum = $classNum % 10;
-//         }
-//         elseif($classNum >= 10){
-//             array_push($classPhrase, $numWords[3][$classNum % 10]);
-//             $classNum = 0;
-//         }
+        if($classNum >= 20){
+            $tensVal = intdiv($classNum, 10);
+            array_push($classPhrase, $numWords[1][$tensVal-2]);
+            $classNum = $classNum % 10;
+        }
+        elseif($classNum >= 10){
+            array_push($classPhrase, $numWords[3][$classNum % 10]);
+            $classNum = 0;
+        }
 
-//         if($classNum > 0){
-//             array_push($classPhrase, $numWords[0][$classNum-1]);
-//         }
+        if($classNum > 0){
+            array_push($classPhrase, $numWords[0][$classNum-1]);
+        }
 
-//         return implode(' ', $classPhrase);
-//     }
+        return implode(' ', $classPhrase);
+    }
 
 //     //Возвращает окончание назавние класса (например, для числа 1 234)
 //     //типа ['a', 'тысяч', 'а']
