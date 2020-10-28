@@ -6,9 +6,9 @@
         $classes = num2classes($input);
         $classCount = count($classes);
 
-//         if($classCount == 1 && $classes[0] == 0){
-//             $output = 'ноль';
-//         }
+        if($classCount == 1 && $classes[0] == 0){
+            $output = 'ноль';
+        }
 //         else{
             
 //                     $output = 'Введён не 0';
