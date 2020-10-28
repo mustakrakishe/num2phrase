@@ -19,7 +19,7 @@
 //                     $classId = $classCount - $key - 1;
 //                     $output .= getClassEnding($classId, $class);
 //                 }
-            }
+//            }
         }
 //         $output = trim($output);
 //         $firstChar = mb_substr($output, 0, 1);
