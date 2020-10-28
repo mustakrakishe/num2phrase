@@ -2,28 +2,28 @@
     //Преобразует строку числа типа '1234'
     //в строковую фразу типа 'Одна тысяча двести дридцать четыре'
     function numStr2phrase($input){
-        $output = 'Зашёл в numStr2phrase';
-        $classes = num2classes($input);
-        $classCount = count($classes);
+//         $output = 'Зашёл в numStr2phrase';
+//         $classes = num2classes($input);
+//         $classCount = count($classes);
 
-        if($classCount == 1 && $classes[0] == 0){
-            $output = 'ноль';
-        }
-        else{
+//         if($classCount == 1 && $classes[0] == 0){
+//             $output = 'ноль';
+//         }
+//         else{
             
-                    $output = 'Введён не 0';
-            foreach($classes as $key => $class){
-                if($class != 0){
-                    $output = 'класс != 0';
-//                     $output .= ' ' . classNum2words($class);
-//                     $classId = $classCount - $key - 1;
-//                     $output .= getClassEnding($classId, $class);
-                }
-            }
-        }
-//         $output = trim($output);
-//         $firstChar = mb_substr($output, 0, 1);
-//         return $output = mb_strtoupper($firstChar) . mb_substr($output, 1);
+//                     $output = 'Введён не 0';
+//             foreach($classes as $key => $class){
+//                 if($class != 0){
+//                     $output = 'класс != 0';
+// //                     $output .= ' ' . classNum2words($class);
+// //                     $classId = $classCount - $key - 1;
+// //                     $output .= getClassEnding($classId, $class);
+//                 }
+//             }
+//         }
+// //         $output = trim($output);
+// //         $firstChar = mb_substr($output, 0, 1);
+// //         return $output = mb_strtoupper($firstChar) . mb_substr($output, 1);
         
         return ['kykycuku'];
     }
