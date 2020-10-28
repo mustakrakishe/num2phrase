@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        //include('functions.php');
+        include('functions.php');
         if(isset($_POST['input'])){
             $input = $_POST['input'];
 
