@@ -7,12 +7,12 @@
 </head>
 <body>
     <?php
-        include('functions.php');
+        //include('functions.php');
         if(isset($_POST['input'])){
             $input = $_POST['input'];
 
             if($input != ''){
-                $output = numStr2phrase(preg_replace('|[^0-9]|', '', $input));
+                //$output = numStr2phrase(preg_replace('|[^0-9]|', '', $input));
                 $output = $input . '_lalala';
                 
             }
