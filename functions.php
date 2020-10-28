@@ -2,9 +2,9 @@
     //Преобразует строку числа типа '1234'
     //в строковую фразу типа 'Одна тысяча двести дридцать четыре'
     function numStr2phrase($input){
-//         $output = 'Зашёл в numStr2phrase';
-//         $classes = num2classes($input);
-//         $classCount = count($classes);
+        $output = 'Зашёл в numStr2phrase';
+        $classes = num2classes($input);
+        $classCount = count($classes);
 
 //         if($classCount == 1 && $classes[0] == 0){
 //             $output = 'ноль';
@@ -25,7 +25,7 @@
 // //         $firstChar = mb_substr($output, 0, 1);
 // //         return $output = mb_strtoupper($firstChar) . mb_substr($output, 1);
         
-        return ['kykycuku'];
+        return 'kykycuku';
     }
 
 //     //Преобразует строку числа типа '1234'
