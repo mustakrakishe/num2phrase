@@ -1,4 +1,5 @@
 <?php
+    mb_internal_encoding('UTF-8');
     $token = '1129760319:AAHggO0wzgA4_Rl8qkbYq3nUdYSDrR0fT5g';
     include ('functions.php');
 
