@@ -12,14 +12,14 @@
         else{
             
             $output = 'Введён не 0';
-//             foreach($classes as $key => $class){
-//                 if($class != 0){
+             foreach($classes as $key => $class){
+                 if($class != 0){
 //                     $output = 'класс != 0';
 //                     $output .= ' ' . classNum2words($class);
 //                     $classId = $classCount - $key - 1;
 //                     $output .= getClassEnding($classId, $class);
-//                 }
-//            }
+                 }
+            }
         }
 //         $output = trim($output);
 //         $firstChar = mb_substr($output, 0, 1);
