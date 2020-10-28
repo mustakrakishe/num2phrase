@@ -12,9 +12,10 @@
         else{
             foreach($classes as $key => $class){
                 if($class != 0){
-                    $output .= ' ' . classNum2words($class);
-                    $classId = $classCount - $key - 1;
-                    $output .= getClassEnding($classId, $class);
+                    $output = 'Работает';
+//                     $output .= ' ' . classNum2words($class);
+//                     $classId = $classCount - $key - 1;
+//                     $output .= getClassEnding($classId, $class);
                 }
             }
         }
