@@ -24,7 +24,12 @@
     </form>
     <?php
         if(isset($output)){
-            print_r ($output);
+            if(gettype($output) == 'array'){
+                print_r($output);
+            }
+            else{
+                echo $output;
+            }
         }
     ?>
 </body>
