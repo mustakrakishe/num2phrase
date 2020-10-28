@@ -28,23 +28,23 @@
         return 'kykycuku';
     }
 
-//     //Преобразует строку числа типа '1234'
-//     //в массив классов чисел типа [1, 234]
-//     function num2classes($num){
-//         $strLen = strlen($num);
-//         $firstGroupLen = strlen($num) % 3;
-//         if($firstGroupLen == 0){
-//             $firstGroupLen = 3;
-//         }
-//         $groups[0] = intval(substr($num, 0, $firstGroupLen));
+    //Преобразует строку числа типа '1234'
+    //в массив классов чисел типа [1, 234]
+    function num2classes($num){
+        $strLen = strlen($num);
+        $firstGroupLen = strlen($num) % 3;
+        if($firstGroupLen == 0){
+            $firstGroupLen = 3;
+        }
+        $groups[0] = intval(substr($num, 0, $firstGroupLen));
 
-//         if($strLen != $firstGroupLen){
-//             for($i = $firstGroupLen; $i < $strLen; $i=$i+3){
-//                 array_push($groups, intval(substr($num, $i, 3)));
-//             }
-//         }
-//         return $groups;
-//     }
+        if($strLen != $firstGroupLen){
+            for($i = $firstGroupLen; $i < $strLen; $i=$i+3){
+                array_push($groups, intval(substr($num, $i, 3)));
+            }
+        }
+        return $groups;
+    }
 
 //     //преобразует строку класса числа типа '123'
 //     //в текстовое выражение типа ['сто', 'двадцать', 'три']
