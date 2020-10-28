@@ -2,7 +2,7 @@
     //Преобразует строку числа типа '1234'
     //в строковую фразу типа 'Одна тысяча двести дридцать четыре'
     function numStr2phrase($input){
-        $output = '';
+        $output = 'Зашёл в numStr2phrase';
         $classes = num2classes($input);
         $classCount = count($classes);
 
@@ -10,9 +10,11 @@
             $output = 'ноль';
         }
         else{
+            
+                    $output = 'Введён не 0';
             foreach($classes as $key => $class){
                 if($class != 0){
-                    $output = 'Работает';
+                    $output = 'класс != 0';
 //                     $output .= ' ' . classNum2words($class);
 //                     $classId = $classCount - $key - 1;
 //                     $output .= getClassEnding($classId, $class);
