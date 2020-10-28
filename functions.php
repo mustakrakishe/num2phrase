@@ -25,7 +25,7 @@
 //         $firstChar = mb_substr($output, 0, 1);
 //         return $output = mb_strtoupper($firstChar) . mb_substr($output, 1);
         
-        return 'kykycuku';
+        return ['kykycuku'];
     }
 
 //     //Преобразует строку числа типа '1234'
