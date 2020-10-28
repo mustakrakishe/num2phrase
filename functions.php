@@ -11,7 +11,7 @@
         }
 //         else{
             
-//                     $output = 'Введён не 0';
+//             $output = 'Введён не 0';
 //             foreach($classes as $key => $class){
 //                 if($class != 0){
 //                     $output = 'класс != 0';
@@ -25,7 +25,7 @@
 // //         $firstChar = mb_substr($output, 0, 1);
 // //         return $output = mb_strtoupper($firstChar) . mb_substr($output, 1);
         
-        return 'kykycuku';
+        return $output;
     }
 
     //Преобразует строку числа типа '1234'
