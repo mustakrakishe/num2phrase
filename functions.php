@@ -124,7 +124,7 @@
             $numWordEnding = '';
         }
         $className = getUnitEnding([$classId], 1);
-        $classNameEnding = getUnitEnding([$classId, $digitVal], 2);
+        $classNameEnding = getUnitEnding([$classId, $twoDigitVals], 2);
         
         return $numWordEnding . ' ' . $className . $classNameEnding;
     }
