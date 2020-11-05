@@ -115,8 +115,8 @@
     //Возвращает окончание назавние класса (например, для числа 1 234)
     //типа ['a', 'тысяч', 'а']
     function getClassEnding($classId, $class){
-        $digitVal = $class % 10;
-        $twoDigitVals = $class % 100;
+        $digitVal = $class % 100;
+        $twoDigitVals = $class % 10;
         if($twoDigitVals < 10 || $twoDigitVals > 20){
             $numWordEnding = getUnitEnding([$classId, $digitVal], 0);
         }
