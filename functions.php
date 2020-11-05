@@ -92,7 +92,7 @@
         if($classNum >= 100){
             $hundredsVal = intdiv($classNum, 100);
             array_push($classPhrase, $numWords[2][$hundredsVal-1]);
-            $classNum = $classNum % 10;
+            $classNum = $classNum % 100;
         }
 
         if($classNum >= 20){
@@ -115,16 +115,17 @@
     //Возвращает окончание назавние класса (например, для числа 1 234)
     //типа ['a', 'тысяч', 'а']
     function getClassEnding($classId, $class){
-        $digitVal = $class % 100;
-        $twoDigitVals = $class % 10;
+        $digitVal = $class % 10;
+        $twoDigitVals = $class % 100;
         if($twoDigitVals < 10 || $twoDigitVals > 20){
             $numWordEnding = getUnitEnding([$classId, $digitVal], 0);
+            $classNameEnding = getUnitEnding([$classId, $digitVal], 2);
         }
         else{
             $numWordEnding = '';
+            $classNameEnding = getUnitEnding([$classId, $twoDigitVals], 2);
         }
         $className = getUnitEnding([$classId], 1);
-        $classNameEnding = getUnitEnding([$classId, $twoDigitVals], 2);
         
         return $numWordEnding . ' ' . $className . $classNameEnding;
     }
