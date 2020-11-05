@@ -92,7 +92,7 @@
         if($classNum >= 100){
             $hundredsVal = intdiv($classNum, 100);
             array_push($classPhrase, $numWords[2][$hundredsVal-1]);
-            $classNum = $classNum % 100;
+            $classNum = $classNum % 10;
         }
 
         if($classNum >= 20){
